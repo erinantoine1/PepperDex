@@ -1,8 +1,9 @@
 {
   "expo": {
     "name": "PepperDex",
-    "slug": "PepperDex",
+    "slug": "pepperdex",
     "version": "1.0.0",
+    "scheme": "PepperDex",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,16 +16,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.erinantoine1.pepperdex"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.erinantoine1.pepperdex"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6a418fa4-3596-44f6-b537-fee8527bd2b3"
+      }
+    },
+    "owner": "erinantoine1"
   }
 }
